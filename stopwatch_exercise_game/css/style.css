@@ -1,0 +1,217 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     background: black;
+     color: white;
+     font-family: 'Source Sans Pro', sans-serif;
+     padding: 5em 2em 5em 5em;
+}
+
+p,
+li {
+     line-height: 1.5rem;
+     margin-bottom: 1rem;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+     font-weight: bold;
+     margin: 2rem 0 1rem 0;
+     text-transform: uppercase;
+     letter-spacing: 0.1em;
+     
+}
+
+h1 {
+     font-family: 'Bangers', cursive;
+     font-size: 4.5rem;
+     /* font-weight: bold; */
+     margin-bottom: 1em;
+     padding-left: 0.5em;
+     border-left: 5px solid white;
+}
+
+h1 + p {
+     font-size: 1.5rem;
+     line-height: 2rem;
+}
+
+img {
+     width: 60%;
+     margin-left: 2rem;
+     flex-grow: 2;
+}
+
+.button {
+     height: 3em;
+     padding: 0.5em 1em;
+     text-transform: uppercase;
+     letter-spacing: 0.1em;
+     /* font-weight: bold; */
+     color: black;
+     border: none;
+     border-radius: 0.5em;
+     margin: 1rem;
+}
+
+#setTime {
+     background: rgb(135, 206, 250);
+}
+
+#go {
+     background: rgb(74, 133, 74);
+}
+
+#stopIt {
+     background: rgb(255, 0, 0); 
+
+}
+
+.button:hover {
+     background: white;
+     font-weight: bold;
+}
+
+.button[disabled],
+#go[disabled],
+#setTime[disabled]
+#stopIt[disabled] { 
+     border: 1px solid white; 
+     background: gray !important; /*for stopIt */
+     opacity: 1;
+     font-weight: normal;
+} 
+
+.wrapper {
+     display: flex;
+}
+
+.gameplay {
+     justify-content: space-between;
+}
+
+.gameplay section + section {
+     margin-left: 1rem;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
+}
+
+section {
+     margin: 1em 0;
+}
+
+/* 
+#intro::before {
+     content: "";
+     display: block;
+     background: white;
+     height: 4px;
+     width: 5em;
+     margin-top: 3em;
+} */
+
+#intro h2 {
+     padding-left: 1em;
+     border-left: 3px solid white;
+}
+
+
+#actions {
+     flex-direction: column;
+}
+
+#targetTime {
+     font-weight: bold;
+     font-size: 2rem;
+     display:block;
+
+}
+
+#announce {
+     font-family: 'Bangers', cursive;
+     font-size: 2rem;
+     line-height: 2rem;
+}
+
+#actions h3 {
+     width: 100%;
+}
+
+
+footer {
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.hidden {
+     display: none;
+}
+
+@media screen and (max-width:1100px){
+
+     body {
+          padding: 4rem 0 4rem 1.5rem;
+     }
+     
+     #actions {
+          flex-shrink: 2;
+     }
+
+
+     img {
+          width: 100%;
+          margin: 0;
+
+     }
+
+}
+
+
+
+@media screen and (max-width:800px){
+
+     body {
+          padding: 4rem 0 4rem 1.5rem;
+     }
+     .gameplay.wrapper {
+          flex-direction: column;
+     }
+     img {
+          width: 100%;
+          margin: 0;
+
+     }
+
+}

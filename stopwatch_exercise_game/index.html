@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Your description goes here">
+    	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+		<title>Delivery Game</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet"> 
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+		<header>
+			<h1>Will they deliver on time?</h1>
+			<p>A new food delivery service delivers food in a matter of seconds! But it needs your help to make it happen. You don't want to deliver the food too early or it may get cold and not taste as great. Obviously, don't take too long to deliver it!</p>
+		</header>
+
+		<section id="intro">
+			<h2>How to play</h2>
+			<ol>
+				<li>Click the set button below to generate your target delivery time. You must deliver the food within 0.5 seconds of that time - no earlier, no later.</li>
+				<li>Start the clock by clicking on the start button.</li>
+				<li>Stop the clock by clicking on the stop button.</li>
+				<li>Play again by setting a new target delivery time.</li>
+			</ol>
+		</section>
+
+		<section class="wrapper gameplay">
+			<section  id="actions" class="wrapper">
+				<input type="submit" id="setTime" class="button" value="Set delivery time"> 
+				<input type="submit" disabled id="go" class="button" value="Start">
+				<input type="submit" disabled id="stopIt" class="button" value="Stop"> 
+			</section>
+
+			<section id="notice">
+				<h3>Target time: <span id="targetTime"></span></h3>
+				<p id="announce"></p>
+			</section>
+
+			<section id="outcomes">
+				<img src="images/start.jpg" id="start" class="" alt="delivery waiting">
+				<img src="images/enroute.gif" id="enroute" class="hidden" alt="en route">
+				<img src="images/failed.jpg" id="failed" class="hidden" alt="you failed">
+				<img src="images/success.gif" id="success" class="hidden" alt="successful delivery">
+			</section>
+		</section>
+
+		<footer>
+			
+		</footer>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

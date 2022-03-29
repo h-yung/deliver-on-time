@@ -5,11 +5,12 @@ Page design is simple and mostly responsive.
 
 Google font for headings may not display properly in Firefox depending on local sandbox security settings.
 
-Player can do three things:
+<h2>Player can do three things:</h2>
 
-	Set a target time.
+<ul>
+	<li> Set a target time.
 
-	Start and then stop the stopwatch to try to match the target time within a margin of error (currently given as 0.5sec).
+	<li>Start and then stop the stopwatch to try to match the target time within a margin of error (currently given as 0.5sec).
 
 	Page will display whether player succeeded or failed, then allow player to go again by setting new target time.
 

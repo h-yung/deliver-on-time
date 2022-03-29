@@ -34,6 +34,10 @@ li {
      margin-bottom: 1rem;
 }
 
+a {
+     color: lightskyblue;
+}
+
 
 h1,
 h2,
@@ -169,6 +173,10 @@ section {
 
 
 footer {
+     font-size: smaller;
+     padding-left: 1em;
+     border-left: 2px solid white;
+
 }
 
 /******************************************

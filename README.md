@@ -61,4 +61,4 @@ Google font for headings may not display properly in Firefox depending on local 
 </ol>
 
 <h2>Live</h2>
-<p>https://deliver-on-time.netlify.app/</p>
+<p>https://h-yung.github.io/stopwatchDeliveryGame/</p>

@@ -1,7 +1,7 @@
 # stopwatchDeliveryGame
 Small game based on a stopwatch to make waiting less painful. Similar philosophy as the Google t-rex.
 
-Page design is simple and mostly responsive.
+Simple responsive layout.
 
 Google font for headings may not display properly in Firefox depending on local sandbox security settings.
 
